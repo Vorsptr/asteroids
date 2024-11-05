@@ -15,3 +15,6 @@ class CircleShape(pygame.sprite.Sprite):
     
     def update(self, dt):
         pass
+    
+    def collosionCheck(self,Obj):
+        return self.position.distance_to(Obj.position) <= self.radius + Obj.radius
